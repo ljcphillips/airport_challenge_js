@@ -14,4 +14,13 @@ describe('Airport', function() {
      });
    });
 
+   describe('does not hava the plane after taking off', function() {
+     it('has no plane', function() {
+       airport.take_off(plane)
+       expect(airport.hangar).not.toContain(plane);
+     });
+   });
+
+
+
   });
